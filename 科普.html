@@ -1,0 +1,82 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>科普</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="logo">
+        <!--<img src="logo.gif">-->
+    </div>
+    <div id ="menu"> 
+          <ul>
+             <li><a href="index.html" ><h3>产品介绍|首页</h3></a></li>
+             <li><a href="科普.html" ><h3>科普</h3></a></li>
+             <li><a href="关于我们.html" ><h3>关于我们</h3></a></li>
+             <li><a href="帮助中心.html" ><h3>帮助中心</h3></a></li>
+             <li><a href="登录界面.html" ><h3>登录</h3></a></li>
+          </ul>
+    </div>
+    <div class="box4">
+        <img src="导航条.jpg" width="1200px" height="300px">
+        <table width="1100px">
+            
+            <tr align="center">
+                <td >
+                    <h3>癌症科普小推文</h3>
+                </td>
+            </tr>
+            <tr height="30px"><td></td></tr>
+            <tr align="center">
+                <td>
+                    <img src="夺走许多人健康.png" width="1000px" height="500px"><br>
+                    <a href="https://mp.weixin.qq.com/s/99-DJjd1FnXsxSrS9lvNzQ" target="_blank">夺走许多人健康甚至生命的“凶手”你真的认识吗？</a>
+                    <br><br><br>
+                    <img src="癌症标志物.png" width="1000px" height="300px"><br>
+                    <a href="https://mp.weixin.qq.com/s/qHO8kZ-vUgUxkhGk-rMzeg" target="_blank">癌症生物标志物 | 你知道多少？</a>
+                    <br><br><br>
+                    <img src="电解质科普.png" width="1000px" height="300px"><br>
+                    <a href="https://mp.weixin.qq.com/s/Oot2EvmF6Hwbup1PnA2B3Q" target="_blank">一文带你了解电化学传感器！</a>
+                    <br><br><br>
+                    <img src="microRNA.jpg" width="1000px" height="300px"><br>
+                    <a href="https://mp.weixin.qq.com/s/cFuPac0ahvDk9eSAQ9CTcA" target="_blank">microRNA——“天生的”癌症检测标志物</a><br><br>
+                </td>
+            </tr>
+            <tr height="50px"><td></td></tr>
+            <tr>
+                <td>
+                    <h3>健康中国行动——癌症实施防治实施方案(2019-2022年）</h3><br><font color="#807E7E">
+                    &nbsp;&nbsp;&nbsp;&nbsp;以习近平新时代中国特色社会主义思想为指导，全面贯彻党的十九大和十九届二中、三中全会精神，坚持以人民为中心的发展思想，牢固树立大卫生、大健康的观念，坚持预防为主、防治结合、综合施策，创新体制机制和工作模式，普及健康知识，动员群众参与癌症防治，部署加强癌症预防筛查、早诊早治和科研攻关，聚焦癌症防治难点，集中优势力量在发病机制、防治技术、资源配置、政策保障等关键环节取得重点突破，有效减少癌症带来的危害，为增进群众健康福祉、共建共享健康中国奠定重要基础。</font>
+                </td>
+            </tr>
+            <tr ><td align="center"><img src="三步走.jpg" width="1000px" height="500px"></td></tr>
+        </table>
+           
+        <div id="footer">  
+            <span class="scroll"></span>
+            <!-- <span id="star-five" class="scroll"></span> -->
+            
+            <span>法律声明</span>
+            <el-divider direction="vertical"></el-divider>
+            <span>友情链接</span>
+            <el-divider direction="vertical"></el-divider>
+            <span @click="drawer = true">联系我</span>
+            <br>
+            <br>
+            <span class="copyright">版权&copy; 版权所有 康易科技有限公司</span><br>
+            <el-drawer
+              title="联系我"
+              :visible.sync="drawer"
+              :direction="direction"
+              :before-close="handleClose">
+              <p id="info">
+                <i class="el-icon-phone"></i>电话：123456789<br/>
+                <i class="el-icon-message"></i>邮箱：Sales@kangyi.com<br/>
+              </p>
+            </el-drawer>
+        </div>
+    </div>
+</body>
+</html>

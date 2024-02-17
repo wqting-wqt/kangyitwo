@@ -1,0 +1,118 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>数据检测</title>
+<link rel="stylesheet" href="style.css">   
+</head>
+
+<body>
+    <div id="logo">
+        <!--<img src="logo.gif">-->
+    </div>
+    <div id ="menu"> 
+          <ul>
+             <li><a href="index.html" ><h3>产品介绍|首页</h3></a></li>
+             <li><a href="科普.html" ><h3>科普</h3></a></li>
+             <li><a href="关于我们.html" ><h3>关于我们</h3></a></li>
+             <li><a href="帮助中心.html" ><h3>帮助中心</h3></a></li>
+             <li><a href="登录界面.html" ><h3>登录</h3></a></li>
+          </ul>
+    </div>
+    <div class="box4">
+        <img src="导航条.jpg" width="1200px" height="300px">
+        <table width="1100px" align="center" style="border-radius: 20px" border="1" bordercolor="#BAEFC0">
+            <tr align="center" height="80px">
+                <td >采样方式</td>
+                <td>采样时间</td>
+                <td>检测结果</td>
+                <td>试剂编号</td>
+            </tr>
+            <tr align="center"  height="100px">
+                <td rowspan="11">血液样本</td>
+                <td>2023-11-30</td>
+                <td>健康</td>
+                <td>1152241001</td>
+            </tr>
+            <tr align="center"  height="80px"> 
+                <td>2023-12-01</td>
+                <td>健康</td>
+                <td>1152241002</td>
+            </tr>
+            <tr align="center"  height="80px"> 
+                <td>2023-11-10</td>
+                <td>危险</td>
+                <td>1152241003</td>
+            </tr>
+            <tr align="center"  height="80px"> 
+                <td>2023-11-12</td>
+                <td>危险</td>
+                <td>1152241004</td>
+            </tr>
+            <tr align="center"  height="80px"> 
+                <td>2023-11-12</td>
+                <td>健康</td>
+                <td>1152241005</td>
+            </tr>
+            <tr align="center" height="80px"> 
+                <td>2023-12-15</td>
+                <td>健康</td>
+                <td>1152241006</td>
+            </tr>
+            <tr align="center" height="80px"> 
+                <td>2023-12-20</td>
+                <td>健康</td>
+                <td>1152241006</td>
+            </tr>
+            <tr align="center" height="80px"> 
+                <td>2023-12-23</td>
+                <td>危险</td>
+                <td>1152241007</td>
+            </tr>
+            <tr align="center" height="80px"> 
+                <td>2023-12-24</td>
+                <td>健康</td>
+                <td>1152241008</td>
+            </tr>
+            <tr align="center" height="80px"> 
+                <td>2023-12-26</td>
+                <td>健康</td>
+                <td>1152241009</td>
+            </tr>
+            <tr align="center" height="80px"> 
+                <td>2023-12-30</td>
+                <td>健康</td>
+                <td>11522410010</td>
+            </tr>
+            
+        </table>
+        <table width="1100px" >
+            <tr height="30px"><td></td></tr>
+            <tr  align="right"><td><font color="#6B6969">更多</font></td></tr>
+       </table>
+        <div id="footer">  
+            <span class="scroll"></span>
+            <!-- <span id="star-five" class="scroll"></span> -->
+            
+            <span>法律声明</span>
+            <el-divider direction="vertical"></el-divider>
+            <span>友情链接</span>
+            <el-divider direction="vertical"></el-divider>
+            <span @click="drawer = true">联系我</span>
+            <br>
+            <br>
+            <span class="copyright">版权&copy; 版权所有 康易科技有限公司</span><br>
+            <el-drawer
+              title="联系我"
+              :visible.sync="drawer"
+              :direction="direction"
+              :before-close="handleClose">
+              <p id="info">
+                <i class="el-icon-phone"></i>电话：123456789<br/>
+                <i class="el-icon-message"></i>邮箱：Sales@kangyi.com<br/>
+              </p>
+            </el-drawer>
+        </div>
+    </div>
+</body>
+</html>
